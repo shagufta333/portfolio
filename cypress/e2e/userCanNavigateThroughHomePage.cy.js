@@ -1,5 +1,7 @@
-describe('template spec', () => {
-  it('passes', () => {
-    cy.visit('/')
-  })
-})
+describe("template spec", () => {
+  beforeEach(() => {
+    cy.visit("/");
+  });
+
+  it("passes", () => {});
+});
