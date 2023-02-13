@@ -3,5 +3,10 @@ describe("template spec", () => {
     cy.visit("/");
   });
 
-  it("passes", () => {});
+  context("Header Section",() => {
+   it('displays About Me header', () => {
+  //  cy.getByData("about-header").contains("About Me")
+   });
+
+  })
 });
