@@ -5,7 +5,7 @@ const Header = () =>{
 
 
 return(
-<Segment>
+<Segment raised>
   first try
 </Segment>
 )
