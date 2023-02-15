@@ -3,11 +3,22 @@ import Header from "./components/header";
 import "./App.css";
 const App = () => {
   return (
+    <>
+      <div className="container">
+        <Header />
+      </div>
+
+      {/* <BrowserRouter>
   
-  <div className="container">
-  <Header />
-  </div>
-  )
+     
+     <Route exact path="/" component={Header} />
+
+  
+  
+  
+  </BrowserRouter> */}
+    </>
+  );
 };
 
 export default App;

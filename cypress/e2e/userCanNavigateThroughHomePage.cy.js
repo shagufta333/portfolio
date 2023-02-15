@@ -4,8 +4,9 @@ describe("template spec", () => {
   });
 
   context("Header Section",() => {
-   it('displays About Me header', () => {
-  //  cy.getByData("about-header").contains("About Me")
+   it('displays About Me Tab', () => {
+    //cy.getByData("about-tab").contains("About Me")
+    cy.get("[data-cy=about-tab]").should("contain", "About Me");
    });
 
   })
