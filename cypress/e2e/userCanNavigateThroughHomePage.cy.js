@@ -3,11 +3,9 @@ describe("template spec", () => {
     cy.visit("/");
   });
 
-  context("Header Section",() => {
-   it('displays About Me Tab', () => {
-    //cy.getByData("about-tab").contains("About Me")
-    cy.get("[data-cy=about-tab]").should("contain", "About Me");
-   });
-
-  })
+  context("Header Section", () => {
+    it("displays About Me Tab", () => {
+      cy.get("[data-cy=about-tab]").should("contain", "About Me");
+    });
+  });
 });
