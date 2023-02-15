@@ -9,7 +9,7 @@ const Header = () => {
       data-cy="about-tab"      
       name="About Me"
       as={Link}
-      to={{ pathname: "/" }} />
+      to={{ pathname: "/about" }} />
       <Menu.Item name="My Projects" />
       <Menu.Item name="My Resume" />
       <Menu.Item name="Contact" />

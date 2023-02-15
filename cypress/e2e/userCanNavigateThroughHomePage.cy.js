@@ -7,5 +7,8 @@ describe("template spec", () => {
     it("displays About Me Tab", () => {
       cy.get("[data-cy=about-tab]").should("contain", "About Me");
     });
+    it("displays component name in url", () => {
+      cy.url().should("contain", "about");
+    });
   });
 });
