@@ -1,14 +1,14 @@
 import React from "react";
 import Header from "./components/header";
 import "./App.css";
-import About  from "./components/about";
+import Welcome  from "./components/welcome";
 const App = () => {
   return (
     <>
       <div className="container">
         <Header />
       </div>
-      <About />
+      <Welcome />
 
       {/* <BrowserRouter>
   
