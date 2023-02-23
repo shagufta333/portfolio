@@ -5,7 +5,6 @@ import HtmlIcon from "../images/html2.png";
 import ReactIcon from "../images/react6.png";
 import JsScript from "../images/js.png";
 import CssIcon from "../images/css9.png";
-import CodeIcon from "../images/code3.png";
 import GithubIcon from "../images/github7.png";
 
 const Welcome = () => {
