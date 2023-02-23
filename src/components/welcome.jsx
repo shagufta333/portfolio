@@ -27,17 +27,16 @@ const Welcome = () => {
             any questions you might have.
           </p>
         </Fade>
-        {/* <Image src={JobImg} alt="working" centered /> */}
+
         <Fade bottom>
           <Grid padded="vertically" textAlign="center">
             <Grid.Row columns={6}>
               <Image size="tiny" src={ReactIcon} />
               <Image size="tiny" src={HtmlIcon} />
               <Image size="tiny" src={JsScript} />
-              {/* <Image size="tiny" src={CodeIcon} /> */}
-              
+
               <Image size="tiny" src={CssIcon} />
-              
+
               <Image size="tiny" src={GithubIcon} />
             </Grid.Row>
           </Grid>

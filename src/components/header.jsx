@@ -29,7 +29,7 @@ class Header extends Component  {
       name="About Me"
       as={Link}
       to={{ pathname: "/about" }}
-      //active={activeItem === "about me"}
+      active={activeItem === "about me"}
       onClick={this.handleItemClick}/>
      
       <Menu.Item 
@@ -37,7 +37,7 @@ class Header extends Component  {
       name="Contact"
       as={Link}
       to={{ pathname: "/contact" }}
-      //active={activeItem === "contact"}
+      active={activeItem === "contact"}
       onClick={this.handleItemClick}/>
     </Menu>
     )
