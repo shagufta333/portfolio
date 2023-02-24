@@ -1,4 +1,4 @@
-describe("template spec", () => {
+describe("user can navigate through links in header", () => {
   beforeEach(() => {
     cy.visit("/");
   });
@@ -23,6 +23,17 @@ describe("template spec", () => {
     });
     it("displays component name in url", () => {
       cy.url().should("contain", "/");
+    });
+  });
+  context.only("MyProjects-tab Section", () => {
+    beforeEach(() => {
+      cy.get("[data-cy=projects-tab]").click();
+    });
+    it("displays My Projects Tab", () => {
+      cy.get("[data-cy=projects-tab]").should("contain", "My Projects");
+    });
+    it("displays component name in url", () => {
+      cy.url().should("contain", "/myProjects");
     });
   });
 });
