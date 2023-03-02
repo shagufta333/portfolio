@@ -14,7 +14,8 @@ const Welcome = () => {
         padded="very"
         style={{
           backgroundImage:
-            "linear-gradient(to right, rgb(245, 223, 77) 0%, rgb(147, 149, 151) 100%)",
+            "linear-gradient(to right, rgb(245, 223, 77) 0%, rgb(147, 149, 151) 100%)", position:"relative",
+            width: "40%" , height: "400px",
         }}
       >
         <Fade top>

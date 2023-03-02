@@ -3,7 +3,7 @@ describe("user can navigate through links in header", () => {
     cy.visit("/");
   });
 
-  context("About-tab Section", () => {
+  context("About-tab ", () => {
     beforeEach(() => {
       cy.get("[data-cy=about-tab]").click();
     });
@@ -14,7 +14,7 @@ describe("user can navigate through links in header", () => {
       cy.url().should("contain", "about");
     });
   });
-  context("MyPortfolio-tab Section", () => {
+  context("MyPortfolio-tab ", () => {
     beforeEach(() => {
       cy.get("[data-cy=portfolio-tab]").click();
     });
@@ -25,7 +25,7 @@ describe("user can navigate through links in header", () => {
       cy.url().should("contain", "/");
     });
   });
-  context("MyProjects-tab Section", () => {
+  context("MyProjects-tab ", () => {
     beforeEach(() => {
       cy.get("[data-cy=projects-tab]").click();
     });
@@ -36,7 +36,7 @@ describe("user can navigate through links in header", () => {
       cy.url().should("contain", "/myProjects");
     });
   });
-  context("Contact-tab Section", () => {
+  context("Contact-tab ", () => {
     beforeEach(() => {
       cy.get("[data-cy=contact-tab]").click();
     });

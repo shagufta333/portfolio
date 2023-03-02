@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Menu } from "semantic-ui-react";
+import { Menu, Segment  } from "semantic-ui-react";
 import { Outlet, Link } from "react-router-dom";
 
 class Header extends Component {
@@ -9,8 +9,11 @@ class Header extends Component {
   render() {
     const { activeItem } = this.state;
     return (
-      <Menu>
-        <Menu.Item
+
+    <Segment id="header"  >
+      <Menu >
+        <div class="links" >
+        <Menu.Item class="item"
           data-cy="portfolio-tab"
           name="My Portfolio"
           as={Link}
@@ -18,8 +21,8 @@ class Header extends Component {
           active={activeItem === "my portfolio"}
           onClick={this.handleItemClick}
         />
-        <br />
-        <Menu.Item
+        
+        <Menu.Item class="item"
           data-cy="projects-tab"
           name="My Projects"
           as={Link}
@@ -27,7 +30,9 @@ class Header extends Component {
           onClick={this.handleItemClick}
 
         />
-        <Menu.Item
+        
+        <Menu.Item class="item"
+         position="left"
           data-cy="about-tab"
           name="About Me"
           as={Link}
@@ -36,7 +41,7 @@ class Header extends Component {
           onClick={this.handleItemClick}
         />
 
-        <Menu.Item
+        <Menu.Item class="item"
           data-cy="contact-tab"
           name="Contact"
           as={Link}
@@ -44,7 +49,9 @@ class Header extends Component {
           active={activeItem === "contact"}
           onClick={this.handleItemClick}
         />
+        </div>
       </Menu>
+      </Segment>
     );
   }
 }
