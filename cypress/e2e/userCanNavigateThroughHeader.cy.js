@@ -5,7 +5,7 @@ describe("user can navigate through links in header", () => {
 
   context("About-tab ", () => {
     beforeEach(() => {
-      cy.get("[data-cy=about-tab]").click();
+      cy.get("[data-cy=about-tab]").click({ force: true });
     });
     it("displays About Me tab", () => {
       cy.get("[data-cy=about-tab]").should("contain", "About Me");
@@ -16,7 +16,7 @@ describe("user can navigate through links in header", () => {
   });
   context("MyPortfolio-tab ", () => {
     beforeEach(() => {
-      cy.get("[data-cy=portfolio-tab]").click();
+      cy.get("[data-cy=portfolio-tab]").click({ force: true });
     });
     it("displays My Portfolio tab", () => {
       cy.get("[data-cy=portfolio-tab]").should("contain", "My Portfolio");
@@ -27,7 +27,7 @@ describe("user can navigate through links in header", () => {
   });
   context("MyProjects-tab ", () => {
     beforeEach(() => {
-      cy.get("[data-cy=projects-tab]").click();
+      cy.get("[data-cy=projects-tab]").click({ force: true });
     });
     it("displays My Projects tab", () => {
       cy.get("[data-cy=projects-tab]").should("contain", "My Projects");
@@ -38,7 +38,7 @@ describe("user can navigate through links in header", () => {
   });
   context("Contact-tab ", () => {
     beforeEach(() => {
-      cy.get("[data-cy=contact-tab]").click();
+      cy.get("[data-cy=contact-tab]").click({ force: true });
     });
     it("displays Contact tab", () => {
       cy.get("[data-cy=contact-tab]").should("contain", "Contact");

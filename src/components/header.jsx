@@ -13,8 +13,9 @@ class Header extends Component {
     <Segment id="header"  >
       <Menu >
         <div class="links" >
-        <Menu.Item class="item"
-          data-cy="portfolio-tab"
+        <Menu.Item
+         
+         data-cy="portfolio-tab"
           name="My Portfolio"
           as={Link}
           to={{ pathname: "/" }}
