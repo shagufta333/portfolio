@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Menu, Segment  } from "semantic-ui-react";
-import { Outlet, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 class Header extends Component {
   state = { activeItem: "my portfolio" };
@@ -14,7 +14,7 @@ class Header extends Component {
       <Menu >
         <div class="links" >
         <Menu.Item
-         
+         class="item"
          data-cy="portfolio-tab"
           name="My Portfolio"
           as={Link}
@@ -28,6 +28,7 @@ class Header extends Component {
           name="My Projects"
           as={Link}
           to={{ pathname: "/myProjects" }}
+          active={activeItem === "my projects"}
           onClick={this.handleItemClick}
 
         />
