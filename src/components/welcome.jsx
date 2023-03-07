@@ -9,12 +9,7 @@ import GithubIcon from "../images/github7.png";
 
 const Welcome = () => {
   return (
-    <Container className="con"
-      padded="very"
-      style={{
-      
-      }}
-    >
+    <Container  padded="very">
       <Fade top>
         <h1 id="hello">Welcome</h1>
       </Fade>
