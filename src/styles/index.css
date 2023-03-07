@@ -57,6 +57,7 @@ a:hover {
   margin-top: 0;
   margin-bottom: 0;
   text-align: center;
+  border-bottom:1px solid #CCC;
 
 }
 
@@ -77,5 +78,13 @@ footer {
   margin-top: 8em;
   margin-left: 40em;
   width: 600px;
+}
+.con{
+  background-image:
+  linear-gradient(to right, rgb(142, 222, 247, 0.814) 0%, rgb(105, 115, 118, 0.814) 100%);
+position: relative;
+width: 35%;
+height: 420px;
+border-right: 1px solid rgba(187, 199, 202, 0.814);
 }
 

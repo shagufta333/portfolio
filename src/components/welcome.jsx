@@ -9,14 +9,10 @@ import GithubIcon from "../images/github7.png";
 
 const Welcome = () => {
   return (
-    <Container
+    <Container className="con"
       padded="very"
       style={{
-        backgroundImage:
-          "linear-gradient(to right, rgb(142, 222, 247, 0.814) 0%, rgb(105, 115, 118, 0.814) 100%)",
-        position: "relative",
-        width: "35%",
-        height: "420px",
+      
       }}
     >
       <Fade top>
