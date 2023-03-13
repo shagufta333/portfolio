@@ -1,9 +1,35 @@
 import React from "react";
+import { Container, Image, Grid } from "semantic-ui-react";
+import Fade from "react-reveal/Fade";
+
 
 const Contact = () => {
+  return (
+    <Container >
+      <Fade top>
+        <h1 id="hello">Welcome</h1>
+      </Fade>
+      <Fade right>
+        <p>
+          This is my simple portfolio! Within you'll find a small collection of
+          some projects I've been working on. Feel free to contact me with any
+          questions you might have.
+        </p>
+      </Fade>
 
-  return(
-    <h1>contact me</h1>
-  )
-}
+      <Fade bottom>
+        <Grid padded="vertically" textAlign="center">
+          <Grid.Row columns={5}>
+            <Image size="tiny" src={ReactIcon} />
+            <Image size="tiny" src={HtmlIcon} />
+            <Image size="tiny" src={JsScript} />
+            <Image size="tiny" src={CssIcon} />
+            <Image size="tiny" src={GithubIcon} />
+          </Grid.Row>
+        </Grid>
+      </Fade>
+    </Container>
+  );
+};
+
 export default Contact;

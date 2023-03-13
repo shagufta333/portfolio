@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  background-color: rgba(105, 115, 118, 0.814);
+  background-color: rgba(96, 102, 103, 0.814);
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
@@ -83,9 +83,23 @@ footer {
     linear-gradient(to right, rgb(142, 222, 247, 0.814) 0%, rgb(105, 115, 118, 0.814) 100%);
   position: relative;
   width: 35%;
-  height: 420px;
+  height: 455px;
   border-right: 1px solid rgba(187, 199, 202, 0.814);
   margin-top: 8em;
   margin-left: 40em;
   width: 600px;
+}
+code {
+  background-color: silver;
+  border-radius: 0.3em;
+  padding-left: 0.2em;
+  padding-right: 0.2em;
+}
+.image{
+  position:relative;
+  margin-top: -45px;
+}
+.icons{
+  position: relative;
+  margin-top: 25px;
 }
