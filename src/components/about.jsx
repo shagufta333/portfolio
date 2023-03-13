@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
-import { Container, Image, Grid, Popup} from "semantic-ui-react";
+import { Container, Image, Grid, Popup, Segment} from "semantic-ui-react";
 import axios from "axios";
-import AboutCard from "./AboutCard";
+import AboutCard from "./aboutCard";
 import Fade from "react-reveal/Fade";
 import HtmlIcon from "../images/html.png";
 import ReactIcon from "../images/react.png";
@@ -11,8 +11,34 @@ import GithubIcon from "../images/github.png";
 import DevImg from "../images/deve.png";
 
 const About = () => {
+  const [abouts, setAbouts] = useState([]);
+
+  useEffect(() => {
+    axios.get("./data/about.json").then((response) => {
+      setAbouts(response.data);
+    });
+  });
+  let aboutList = abouts.map((about) => {
+    return (
+      <div id={`about-${about.id}`} key={about.id}>
+        <AboutCard about={about} />
+      </div>
+    );
+  });
   return (
     <Container  >
+         <Popup
+        header
+        position="left center"
+        trigger={
+          <Segment
+            padded="very"
+            style={{
+              backgroundImage:
+                "linear-gradient(to right, rgb(245, 223, 77) 0%, rgb(147, 149, 151) 100%)",
+            }}
+          >
+       
       
       <Fade top>
           <h1 id="about-header">About Me</h1>
@@ -42,7 +68,14 @@ const About = () => {
         </Grid>
       </Fade>  
       </div>
-      
+      </Segment>
+             }
+             >
+    
+        <Popup.Content>
+          <Popup.Header> {aboutList}</Popup.Header>
+        </Popup.Content>
+        </Popup>
     </Container>
   );
 };
