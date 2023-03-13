@@ -1,5 +1,7 @@
-import React from "react";
-import { Container, Image, Grid} from "semantic-ui-react";
+import React, { useState, useEffect } from "react";
+import { Container, Image, Grid, Popup} from "semantic-ui-react";
+import axios from "axios";
+import AboutCard from "./AboutCard";
 import Fade from "react-reveal/Fade";
 import HtmlIcon from "../images/html.png";
 import ReactIcon from "../images/react.png";
