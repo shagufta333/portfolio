@@ -63,12 +63,10 @@ const About = () => {
             </div>
           </Segment>
         }
-       
       />
-        {/* <Popup.Content>
+      {/* <Popup.Content>
           <Popup.Header> {aboutList}</Popup.Header>
         </Popup.Content> */}
-      
     </Container>
   );
 };
