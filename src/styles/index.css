@@ -90,6 +90,8 @@ footer {
   width: 600px;
 }
 code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+  monospace;
   background-color: silver;
   border-radius: 0.3em;
   padding-left: 0.2em;
@@ -102,4 +104,11 @@ code {
 .icons{
   position: relative;
   margin-top: 25px;
+}
+.card{
+  position: relative;
+  margin-right: 20px;
+  background-color: rgb(26, 151, 200);
+  width: 400px;
+  height: 200px;
 }

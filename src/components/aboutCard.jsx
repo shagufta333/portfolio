@@ -3,7 +3,7 @@ import { Item } from "semantic-ui-react";
 
 const AboutCard = ({ about }) => {
   return (
-    <div>
+    <div class="card">
       <Item.Group>
         <Item>
           <Item.Content>

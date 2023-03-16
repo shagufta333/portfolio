@@ -1,7 +1,11 @@
 import React from "react";
 import { Container, Image, Grid } from "semantic-ui-react";
 import Fade from "react-reveal/Fade";
-
+import HtmlIcon from "../images/html.png";
+import ReactIcon from "../images/react.png";
+import JsScript from "../images/js.png";
+import CssIcon from "../images/css.png";
+import GithubIcon from "../images/github.png";
 
 const Contact = () => {
   return (
