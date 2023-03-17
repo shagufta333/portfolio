@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Image, Grid } from "semantic-ui-react";
+import { Container, Image, Grid,Popup, Segment } from "semantic-ui-react";
 import Fade from "react-reveal/Fade";
 import HtmlIcon from "../images/html.png";
 import ReactIcon from "../images/react.png";
@@ -9,7 +9,13 @@ import GithubIcon from "../images/github.png";
 
 const Welcome = () => {
   return (
-    <Container >
+    <Popup
+      
+       
+       trigger={
+        
+    <Container data-tooltip="text" >
+      
       <Fade top>
         <h1 id="hello">Welcome</h1>
       </Fade>
@@ -32,7 +38,13 @@ const Welcome = () => {
           </Grid.Row>
         </Grid>
       </Fade>
-    </Container>
+      </Container>
+       }
+       >
+        <Popup.Header as="h3">User Rating</Popup.Header>
+        <Popup.Content>gggg</Popup.Content>
+        </Popup>
+    
   );
 };
 

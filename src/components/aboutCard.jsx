@@ -7,7 +7,7 @@ const AboutCard = ({ about }) => {
       <Item.Group>
         <Item>
           <Item.Content>
-            <Item.Header>Name: {about.name}</Item.Header>
+            <Item.Header as="h3">Name: {about.name}</Item.Header>
             <Item.Description>
               Nationality: {about.nationality}
             </Item.Description>

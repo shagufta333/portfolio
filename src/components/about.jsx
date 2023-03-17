@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Container, Image, Grid, Popup, Segment } from "semantic-ui-react";
+import { Container, Image, Grid, Popup, Segment, Header } from "semantic-ui-react";
 import axios from "axios";
 import AboutCard from "./aboutCard";
 import Fade from "react-reveal/Fade";
@@ -26,16 +26,19 @@ const About = () => {
     );
   });
   return (
-    <Container>
-      <Popup
-        position="left center"
-        content={aboutList}
-        key={abouts.name}
-        header={abouts.name}
-        trigger={
-          <Segment>
+    <Popup
+    
+   position="left center"
+   
+   trigger={
+    <Container textAlign="right">
+     
+        
+        
+          
             <Fade top>
-              <h1 id="about-header">About Me</h1>
+            <Header as='h1' id="about-header">About Me</Header>
+              {/* <h1 id="about-header">About Me</h1> */}
             </Fade>
             <Fade right big>
               <p>
@@ -61,13 +64,13 @@ const About = () => {
                 </Grid>
               </Fade>
             </div>
-          </Segment>
+            </Container>
         }
-      />
-      {/* <Popup.Content>
-          <Popup.Header> {aboutList}</Popup.Header>
-        </Popup.Content> */}
-    </Container>
+    >
+        
+          <Popup.Header > </Popup.Header>
+        <Popup.Content>{aboutList}</Popup.Content>
+        </Popup>
   );
 };
 
