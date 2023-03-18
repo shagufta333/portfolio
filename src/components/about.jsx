@@ -34,7 +34,7 @@ const About = () => {
   });
   return (
     <Popup
-    
+    position="left center"
       trigger={
         <Container textAlign="right">
           <Fade top>
@@ -71,7 +71,7 @@ const About = () => {
       }
     >
       <Popup.Content>{aboutList}</Popup.Content>
-      position="left center"
+     
       
     </Popup>
   );
