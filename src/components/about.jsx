@@ -38,7 +38,7 @@ const About = () => {
       trigger={
         <Container textAlign="right">
           <Fade top>
-            <Header as="h1" id="about-header">
+            <Header as="h1" data-cy="about-header">
               About Me
             </Header>
             {/* <h1 id="about-header">About Me</h1> */}
