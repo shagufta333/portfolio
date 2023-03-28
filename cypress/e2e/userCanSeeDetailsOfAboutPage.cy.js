@@ -13,6 +13,10 @@ describe("User can see details of about page", () => {
     cy.get(".ui.left.center.popup.transition.visible").within(() => {
       cy.get(".header").should("exist");
       cy.get(".header").should("contain", "Shagufta Batool");
+      cy.get("#about-1").should("exist");
+      cy.get(".extra").should("contain", "Stockholm");
+      cy.get(".description").should("exist");
+      cy.get(".extra").should("contain", "Urdu, Dari, Persian, English,Swedish");
     });
   });
 });

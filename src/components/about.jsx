@@ -24,7 +24,7 @@ const About = () => {
     axios.get("./data/about.json").then((response) => {
       setAbouts(response.data);
     });
-  },[]);
+  }, []);
   let aboutList = abouts.map((about) => {
     return (
       <div id={`about-${about.id}`} key={about.id}>
@@ -34,14 +34,13 @@ const About = () => {
   });
   return (
     <Popup
-    position="left center"
+      position="left center"
       trigger={
         <Container textAlign="right">
           <Fade top>
             <Header as="h1" data-cy="about-header">
               About Me
             </Header>
-            {/* <h1 id="about-header">About Me</h1> */}
           </Fade>
           <Fade right big>
             <p>
@@ -71,8 +70,6 @@ const About = () => {
       }
     >
       <Popup.Content>{aboutList}</Popup.Content>
-     
-      
     </Popup>
   );
 };
