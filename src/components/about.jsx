@@ -24,7 +24,7 @@ const About = () => {
     axios.get("./data/about.json").then((response) => {
       setAbouts(response.data);
     });
-  });
+  },[]);
   let aboutList = abouts.map((about) => {
     return (
       <div id={`about-${about.id}`} key={about.id}>

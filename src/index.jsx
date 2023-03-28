@@ -1,13 +1,19 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App'
-import { BrowserRouter } from 'react-router-dom'
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./App";
+import { BrowserRouter } from "react-router-dom";
 import "./styles/index.css";
 
-
-
-ReactDOM.createRoot(document.getElementById('root')).render(
+ReactDOM.render(
   <BrowserRouter>
     <App />
-  </BrowserRouter>
-)
+  </BrowserRouter>,
+  document.getElementById("root")
+);
+
+// ReactDom method for react version 18
+// ReactDOM.createRoot(document.getElementById('root')).render(
+//   <BrowserRouter>
+//     <App />
+//   </BrowserRouter>
+// )
